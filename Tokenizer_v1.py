@@ -13,6 +13,17 @@ def splitt(text):
     return text
 
 text='this is phase 1 of creationg of Tokenizer manually'
-print(splitt(text))
+# print(splitt(text))
 
 # Now here we used : re.sub .....let's create this sub.  TO know how exactly he is doing this .
+
+text = 'this is shahid khan\'s practices'
+strr=[]
+for char in text:
+    if char==' ':
+        char=','
+    strr.append(char)
+
+txt=''.join(strr)
+
+print(txt)
